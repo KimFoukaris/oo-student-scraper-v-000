@@ -23,6 +23,7 @@ class Scraper
     learnco = Nokogiri::HTML(html)
     student = {}
     links = []
+    twitter, linkedin, github, blog = nil
     learnco.css("div.social-icon-container a").each do |link|
       links << link.attribute("href").value
     end
