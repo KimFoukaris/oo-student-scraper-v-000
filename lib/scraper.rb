@@ -38,34 +38,11 @@ class Scraper
         blog = link
       end
     end
-    #binding.pry
-    #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
-    #  case
-    #  when link_text.include?("twitter")
-    #    t_link = learnco.css("div.social-icon-container a").attribute("href").value
-    #  when link_text.include?("linkedin")
-    #    l_link = learnco.css("div.social-icon-container a").attribute("href").value
-    #  when link_text.include?("github")
-    #    g_link = learnco.css("div.social-icon-container a").attribute("href").value
-    #  else
-    #    b_link = learnco.css("div.social-icon-container a").attribute("href").value
-  #    end
-    #  binding.pry
-  #  end
-#binding.pry
-  #student = {
-  #    :profile_quote => learnco.css("div.vitals-text-container div").text,
-  #    :bio => learnco.css("div.description-holder p").text,
-  #    :twitter => t_link, #learnco.css("div.social-icon-container a")[0].attribute("href").value,
-  #    :linkedin => l_link, #learnco.css("div.social-icon-container a")[1].attribute("href").value,
-  #    :github => g_link, #learnco.css("div.social-icon-container a")[2].attribute("href").value,
-  #    :blog => b_link #learnco.css("div.social-icon-container a")[3].attribute("href").value
-  #  }
-
+  
     student = {
       if twitter != nil
-        :twitter => twitter,
-      end
+        :twitter => twitter
+      end,
       if linkedin != nil
         :linkedin => linkedin,
       end
