@@ -38,7 +38,7 @@ class Scraper
         blog = link
       end
     end
-  
+
     student = {
       if twitter != nil
         :twitter => twitter
