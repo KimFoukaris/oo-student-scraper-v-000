@@ -27,13 +27,13 @@ class Scraper
       links << link.attribute("href").value
     end
     links.each do |link|
-      if link.include?("twitter") 
+      if link.include?("twitter")
         twitter = link
       elsif link.include?("linkedin")
         linkedin = link
       elsif link.include?("github")
         github = link
-      else 
+      else
         blog = link
       end
     binding.pry
