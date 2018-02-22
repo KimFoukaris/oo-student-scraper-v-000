@@ -25,6 +25,7 @@ class Scraper
     learnco.css("div.social-icon-container a").each do |link|
       links << learnco.css("div.social-icon-container a").attribute("href").value
     end
+    binding.pry
     #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
     #  case
     #  when link_text.include?("twitter")
@@ -60,3 +61,4 @@ class Scraper
   end
 
 end
+
