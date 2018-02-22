@@ -48,7 +48,7 @@ class Scraper
       :bio => learnco.css("div.description-holder p").text
     }
     student.compact
-    
+
   end
 
 end
