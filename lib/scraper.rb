@@ -40,16 +40,14 @@ class Scraper
     end
 
     student = {
-      if twitter 
-        :twitter => twitter,
-      end
-      if linkedin 
+      :twitter => twitter unless twitter == nil,
+      if linkedin
         :linkedin => linkedin,
       end
-      if github 
+      if github
         :github => github,
       end
-      if blog 
+      if blog
         :blog => blog,
       end
       :profile_quote => learnco.css("div.vitals-text-container div").text,
