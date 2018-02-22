@@ -18,13 +18,13 @@ class Scraper
     array
   end
 
-#ryan-johnson-card > a > div.card-text-container > h4
-
   def self.scrape_profile_page(profile_url)
     html = File.read(profile_url)
     learnco = Nokogiri::HTML(html)
     student = {}
-    #learnco.css("div.social-icon-container a").each do |link|
+    learnco.css("div.social-icon-container a").each do |link|
+      links << learnco.css("div.social-icon-container a").attribute("href").value
+    end
     #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
     #  case
     #  when link_text.include?("twitter")
