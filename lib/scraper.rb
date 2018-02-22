@@ -36,6 +36,7 @@ class Scraper
       else
         blog = link
       end
+    end
     binding.pry
     #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
     #  case
