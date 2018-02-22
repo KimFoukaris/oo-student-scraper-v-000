@@ -38,7 +38,7 @@ class Scraper
         blog = link
       end
     end
-    binding.pry
+    #binding.pry
     #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
     #  case
     #  when link_text.include?("twitter")
