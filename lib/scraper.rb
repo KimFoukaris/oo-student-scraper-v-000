@@ -41,7 +41,7 @@ class Scraper
 
     student = {
       if twitter != nil
-        :twitter => twitter
+        :twitter => twitter,
       end
       if linkedin != nil
         :linkedin => linkedin,
