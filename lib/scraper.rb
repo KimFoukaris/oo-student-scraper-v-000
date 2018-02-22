@@ -65,10 +65,10 @@ class Scraper
     student = {
       :profile_quote => learnco.css("div.vitals-text-container div").text,
       :bio => learnco.css("div.description-holder p").text,
-      :twitter => learnco.css("div.social-icon-container a")[0].attribute("href").value,
-      :linkedin => learnco.css("div.social-icon-container a")[1].attribute("href").value,
-      :github => learnco.css("div.social-icon-container a")[2].attribute("href").value,
-      :blog => learnco.css("div.social-icon-container a")[3].attribute("href").value
+      :twitter => twitter,
+      :linkedin => linkedin,
+      :github => github,
+      :blog => blog
     }
 
   end
