@@ -47,7 +47,8 @@ class Scraper
       :profile_quote => learnco.css("div.vitals-text-container div").text,
       :bio => learnco.css("div.description-holder p").text
     }
-    student.compact
+    student.compact!
+    binding.pry
 
   end
 
