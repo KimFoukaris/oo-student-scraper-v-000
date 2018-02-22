@@ -24,7 +24,7 @@ class Scraper
     student = {}
     links = []
     learnco.css("div.social-icon-container a").each do |link|
-      links << link
+      links << link.css.attribute("href").value
     end
     binding.pry
     #  link_text = learnco.css("div.social-icon-container a").attribute("href").value
